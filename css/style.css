@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos generales */
+html, body {
+    height: 100%; /* Asegura que el html y body ocupen el 100% de la altura */
+    margin: 0;    /* Elimina los márgenes predeterminados */
+}
+
+body {
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Estilos para el menú de navegación */
+.navbar-nav .nav-link {
+    color: #84C5ED;
+}
+
+.navbar-custom {
+    background-color: #84C5ED;
+}
+
+/* Estilos para el pie de página */
+.footer-custom {
+    background-color: #2A2E6B;
+}
+
+/* Estilos para las secciones */
+section {
+    min-height: 100vh; /* Asegura que las secciones ocupen al menos la altura de la pantalla */
+    display: flex;     /* Utiliza flexbox para centrar el contenido si es necesario */
+    align-items: center; /* Alinea el contenido verticalmente en el centro */
+    justify-content: center; /* Centra el contenido horizontalmente si es necesario */
+    padding: 0; /* Elimina el padding adicional */
+}
+
+/* Estilos específicos para cada sección */
+#nosotros {
+    background-color: #7171B3; /* Color de fondo */
+    color: #AED8C5; /* Color del texto */
+    padding-bottom: 0; /* Ajusta el padding inferior */
+}
+
+#nosotros .row {
+    margin-bottom: 0; /* Asegúrate de que no haya margen adicional en la fila */
+}
+
+#nosotros .col-lg-4, 
+#nosotros .col-lg-3 {
+    margin-bottom: 0; /* Asegúrate de que no haya margen inferior en las columnas */
+}
+
+#servicios {
+    background-color: #84C5ED; /* Color de fondo */
+    color: #2A2E6B; /* Color del texto */
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3); /* Sombra en la parte superior */
+}
+
+#servicios h3 {
+    color: #2A2E6B; /* Color para los títulos de los servicios */
+}
+
+#servicios p {
+    color: #2A2E6B; /* Color para los párrafos de los servicios */
+}
+
+#contacto {
+    background-color: #AED8C5; /* Color de fondo */
+    color: #2A2E6B; /* Color del texto */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Sombra en la parte superior */
+}
+
+#contacto .logo img {
+    width: 150px; /* Ajusta según el tamaño del logo */
+}
+
+#contacto h2 {
+    font-size: 2.5rem;
+    color: #00296b; /* Color del título */
+    font-weight: bold;
+}
+
+#contacto .contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos de contacto */
+    margin-top: 20px;
+}
+
+#contacto .contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #003366;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#contacto .contact-link img {
+    width: 24px; /* Ajusta el tamaño de los íconos */
+    height: 24px;
+}
+
+#contacto .contact-link:hover {
+    color: #0056b3; /* Cambia el color al pasar el cursor */
+}
+
