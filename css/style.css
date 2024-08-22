@@ -19,7 +19,8 @@ body {
 }
 
 .navbar-custom {
-    background-color: #AED8D5;
+    background-color: snow;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra en la parte inferior */
 }
 
 /* Estilos para el pie de página */
@@ -41,6 +42,7 @@ section {
     background-color: #7171B3; /* Color de fondo */
     color: #AED8C5; /* Color del texto */
     padding-bottom: 0; /* Ajusta el padding inferior */
+    font-size: 20px;
 }
 
 #nosotros .row {
@@ -107,4 +109,39 @@ section {
 #contacto .contact-link:hover {
     color: #0056b3; /* Cambia el color al pasar el cursor */
 }
+.my-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 767px) {
+    #nosotros {
+        font-size: 16px; /* Reducir el tamaño del texto en pantallas pequeñas */
+        padding: 20px; /* Agregar padding para no pegar el texto a los bordes */
+        margin-top: 80px; /* Asegura que el texto no quede tapado por el navbar */
+    }
+
+    #nosotros .col-lg-6 {
+        order: 2; /* Mueve el texto debajo de la imagen */
+        text-align: center; /* Centra el texto para pantallas pequeñas */
+        margin-bottom: 20px; /* Añade espacio debajo del texto */
+    }
+
+    #nosotros .col-lg-4 {
+        order: 1; /* Mueve la imagen arriba del texto */
+        text-align: center; /* Centra la imagen */
+    }
+
+    #nosotros .img-fluid {
+        max-width: 80%; /* Reducir el tamaño de la imagen en pantallas pequeñas */
+        height: auto; /* Mantener la relación de aspecto de la imagen */
+        display: block; /* Asegura que la imagen sea un bloque */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        margin-left: -29%; /* Ajusta la imagen hacia la izquierda */
+        margin-bottom: 11%;
+    }
+}
+
 
